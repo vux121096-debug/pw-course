@@ -1,0 +1,35 @@
+a. Tao 3 file: file1, file2, file3
+    -> working directory: file1, file2, file3
+    -> Staging area: No
+    -> Repository: No
+
+b. Chay lenh: git init
+-> Khoi tao git de quan ly folder co chua 3 file
+    -> working directory: file1, file2, file3
+    -> Staging area:
+    -> Repository:
+
+c. Chay lenh: git commit -m"init project"
+-> Lenh nay chua commit rong
+-> Cac file tiep tuc o working directory
+    -> working directory: file1, file2, file3
+    -> Staging area:
+    -> Repository:
+
+d. Chay lenh: git add file1
+-> Dua file1 vao vung Staging area
+    -> working directory: file1, file2, file3
+    -> Staging area: file1
+    -> Repository:
+
+e. Chay lenh: git commit -m"add file1"
+-> Luu file1 vao repo
+    -> working directory: file1, file2, file3
+    -> Staging area:
+    -> Repository: file1
+
+f. Chay lenh: git commit -m"add file"
+-> Khong co file nao o staging cho commit, commit rong
+    -> working directory: file1, file2, file3
+    -> Staging area:
+    -> Repository: file1

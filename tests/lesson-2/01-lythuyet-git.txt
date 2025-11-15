@@ -1,0 +1,9 @@
+
+git init 
+    -> Khoi tao git de quan ly folder
+git add <file_name>
+    -> them 1 file cu the vao staging area
+git add . 
+    -> them tat ca cac file moi/ sua/ xoa trong folder hien tai vao staging area
+git commit -m "message"
+    -> Luu thay doi vao git voi message mo ta
