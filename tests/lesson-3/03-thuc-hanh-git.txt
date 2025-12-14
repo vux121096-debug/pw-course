@@ -1,0 +1,9 @@
+Folder demo
+a. Chay lenh: git init
+b. Tao file: file1.txt, file2.txt, oops/file3.txt
+c. Them file: .gitignore, them vao 2 dong
+    i. file1.txt
+    ii. oops/
+d. Chay lenh: git add .
+e. Chay lenh: git commit -m"init project"
+    
