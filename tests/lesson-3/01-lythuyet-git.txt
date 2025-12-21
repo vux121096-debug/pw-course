@@ -1,5 +1,13 @@
-1. Giai thich cau lenh:
-git commit --ammend
-git commit --amend -m"<message>"
-git restore --staged <file>
-git reset HEAD~1
+1. Giải thích câu lệnh:
+git commit --amend: sửa commit gần nhất, overwrite lên commit đó
+    ví dụ: quên add 1 file_abc.txt vào commit 
+    git add file_abc.text
+    git commit --amend
+    -> Commit gần nhất sẽ có file_abc.txt.
+
+git commit --amend -m"<message>": sửa commit gần nhất và thay đổi commit message
+
+git restore --staged <file>: Bỏ các file có thay đổi ra khỏi vùng staging về working directory (thư mục làm việc)
+
+git reset HEAD~1: quay lại trước 1 commit, code của commit trước đó sẽ quay về working directory 
+

@@ -1,0 +1,57 @@
+Folder demo
+a. Tao 3 file: file1, file2, file3
+- Local: file1, file2, file3
+- Working directory: 
+- Staging:
+- Repository:
+
+b. Chay lenh: git init
+- Local: file1, file2, file3
+- Working directory: file1, file2, file3
+- Staging:
+- Repository:
+
+c. Chay lenh: git commit -m"init project" --> chua add file, chay lenh fail, giu nguyen vi tri cac file
+- Local: file1, file2, file3
+- Working directory: file1, file2, file3
+- Staging:
+- Repository:
+
+d. Chay lenh: git add file1  --> dua file1 vao vung staging
+- Local: file1, file2, file3
+- Working directory: file2, file3
+- Staging: file1
+- Repository:
+
+e. Chay lenh: git commit -m"add file" --> dua commit file1 vao vung Repository voi message: "add file"
+- Local: file1, file2, file3
+- Working directory: file2, file3
+- Staging:
+- Repository: commit: file1
+
+f. Chay lenh: git add .  --> dua tat ca cac file dang co tu vung working directory vao vung staging
+- Local: file1, file2, file3
+- Working directory:
+- Staging: file2, file3
+- Repository: commit: file1
+
+g. Chay lenh: git restore --staged file2  --> bo file2 ra khoi vung staging ve lai vung working directory
+- Local: file1, file2, file3
+- Working directory: file2
+- Staging: file3
+- Repository: commit: file1
+
+h. Chay lenh: git commit -m"add all files"  --> commit cac file hien co o vung staging (file3) vao vung Repository voi message: "add all file"
+- Local: file1, file2, file3
+- Working directory: file2
+- Staging:
+- Repository: 
+    commit: file1
+    commit: file3
+
+i. Chay lenh: git reset HEAD~1  --> reset commit gan nhat: commit: file3 tu vung Repository ve lai vung Working directory
+- Local: file1, file2, file3
+- Working directory: file2, file3
+- Staging:
+- Repository: 
+    commit: file1

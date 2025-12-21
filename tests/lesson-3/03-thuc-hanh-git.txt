@@ -1,9 +1,32 @@
 Folder demo
-a. Chay lenh: git init
+a. Chay lenh: git init 
+- Local
+- Working directory
+- Staging
+- Repository
+
 b. Tao file: file1.txt, file2.txt, oops/file3.txt
-c. Them file: .gitignore, them vao 2 dong
+- Local: file1.txt, file2.txt, oops/file3.txt
+- Working directory: file1.txt, file2.txt, oops/file3.txt
+- Staging
+- Repository
+
+c. Them file: .gitignore, them vao 2 dong   --> Git bỏ qua 2 files: file1.txt, và toàn bộ folder oops/ (bao gồm file3.txt)
     i. file1.txt
     ii. oops/
-d. Chay lenh: git add .
-e. Chay lenh: git commit -m"init project"
-    
+- Local: file1.txt, file2.txt, oops/file3.txt
+- Working directory: file2.txt, .gitignore
+- Staging
+- Repository
+
+d. Chay lenh: git add . --> add các file hiện có trong working directory (file2.txt, .gitignore) lên vùng Staging, không add file1.txt, oops/file3.txt
+- Local: file1.txt, file2.txt, oops/file3.txt
+- Working directory:
+- Staging: file2.txt, .gitignore
+- Repository
+
+e. Chay lenh: git commit -m"init project"  --> commit các file hiện có trong staging (file2.txt, .gitignore) lên vùng Repository, không add file1.txt, oops/file3.txt
+- Local: file1.txt, file2.txt, oops/file3.txt
+- Working directory:
+- Staging: 
+- Repository: commit: file2.txt, .gitignore

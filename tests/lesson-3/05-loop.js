@@ -32,3 +32,27 @@ console.log(arrayEmail);
 
 //5. Tinh tong doanh thu cua 12 thang trong nam dua tren mang doanh thu da cho va in ra tong doanh thu.
 //Cau truc object {"month": 2, "total":100}
+
+const revenues = [
+  { month: 1, total: 50 },
+  { month: 2, total: 100 },
+  { month: 3, total: 150 },
+  { month: 4, total: 200 },
+  { month: 5, total: 250 },
+  { month: 6, total: 400 },
+  { month: 7, total: 350 },
+  { month: 8, total: 500 },
+  { month: 9, total: 450 },
+  { month: 10, total: 600 },
+  { month: 11, total: 550 },
+  { month: 12, total: 700 },
+];
+
+let totalRevenue = 0;
+
+for (let i = 0; i < revenues.length; i++) {
+  totalRevenue += revenues[i].total;
+}
+
+console.log("Tong doanh thu 12 tháng:", totalRevenue);
+console.log(revenues.length);
