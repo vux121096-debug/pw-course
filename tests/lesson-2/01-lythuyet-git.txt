@@ -6,4 +6,4 @@ git add <file_name>
 git add . 
     -> them tat ca cac file moi/ sua/ xoa trong folder hien tai vao staging area
 git commit -m "message"
-    -> Luu thay doi vao git voi message mo ta
+    -> Luu thay doi tu Staging vao Repository voi message mo ta

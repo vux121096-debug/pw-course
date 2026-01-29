@@ -37,7 +37,6 @@ Hệ thống quản lý phiên bản có 3 loại chính:
 
 - Add các file có thay đổi: `git add file1.txt file2.txt`
 - Add tất cả file: `git add .`
-
   - Nếu file nằm trong 1 folder
 
     `git add folder/file3.txt`
@@ -65,8 +64,8 @@ Hệ thống quản lý phiên bản có 3 loại chính:
 
 #### Git Config
 
-`git config --global user.name`\
-`git config --global user.email`
+`git config --global user.name "Minh"` \
+`git config --global user.email "minh@example.com"`
 
 Hai lệnh này để đặt mặc định username và email cho toàn bộ các repo trên máy tính
 
@@ -160,7 +159,7 @@ console.log(typeof isStudent);
   ```javascript
   let c = 10;
   d = a++;
-  console.log(b); // trả về d = 10, tăng d lên bằng 11
+  console.log(d); // trả về d = 10, tăng d lên bằng 11
   ```
 
 ### JavaScript - Toán tử toán học họhọc
@@ -219,7 +218,7 @@ Trong Js, có các loại vòng lặp:
 
 - for (i)
 - for (of)
-- for (each)
+- forEach
 - for (in)
 - while
 - do...while
@@ -237,7 +236,8 @@ e.g:
 ```javascript
 for (let i = 0; i < 5; i++) {
   console.log("xin chào");
-} // in ra 4 dòng xin chào
+} // in ra 5 dòng xin chào từ 0 đến 4
+// i = 0,1,2,3,4
 ```
 
 - **Khởi tạo**: chạy 1 lần đầu (thường là let i = 0)
@@ -245,3 +245,29 @@ for (let i = 0; i < 5; i++) {
 - **Điều kiện**: còn đúng thì vòng lặp còn chạy, sai thì dừng
 
 - **Cập nhật**: chạy sau mỗi vòng (thường là i++), để thay đổi giá trị của biến đếm.
+
+KIẾN THỨC BỔ SUNG:
+
+- Toán tử chia dư (%): trả về phần dư của phép chia
+  - `3 % 3 = 0` (vì 3 chia hết cho 3 dư 0)
+  - `4 % 3 = 1`(vì 4 chia cho 3 dư 1)
+    Ứng dụng tìm số chẵn lẻ:
+- Nếu số lẻ, chia dư 2 sẽ bằng 1: `x%2 === 1`
+- Nếu số chẵn, chia dư 2 sẽ bằng 0: `x%2 === 0`
+
+- console.log(): in ra kết quả trên terminal/ console
+- Để in ra kết hợp kiểu chuỗi và giá trị biến, dùng ký tự ` (backtick) và ${biến}
+  e.g:
+  ```javascript
+  const name = "Minh";
+  console.log(`Hello ${name}`);
+  // Hello Minh
+  ```
+- Để nối chuỗi từ 2 biến, ta sử dụng dấu +
+  e.g:
+  ```javascript
+  const firstName = "Minh";
+  const lastName = "Vu";
+  console.log(firstName + " " + lastName);
+  // Minh Vu
+  ```
