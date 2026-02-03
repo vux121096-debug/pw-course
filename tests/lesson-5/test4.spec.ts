@@ -21,7 +21,7 @@ test("Exercise 4", async ({ page }) => {
     await page
       .locator("//textarea[@id='note-content']")
       .fill(
-        "Hàm fill dùng để điền văn bản vào các trường input hoặc textarea trên trang web"
+        "Hàm fill dùng để điền văn bản vào các trường input hoặc textarea trên trang web",
       );
     await page.click("//button[@id='add-note']");
 
@@ -29,7 +29,7 @@ test("Exercise 4", async ({ page }) => {
     await page
       .locator("//textarea[@id='note-content']")
       .type(
-        "Hàm type dùng để nhập từng ký tự  1 vào phần tử, mô phỏng hành vi gõ phím thực tế của người dùng"
+        "Hàm type dùng để nhập từng ký tự  1 vào phần tử, mô phỏng hành vi gõ phím thực tế của người dùng",
       );
     await page.click("//button[@id='add-note']");
 
@@ -37,7 +37,7 @@ test("Exercise 4", async ({ page }) => {
     await page
       .locator("//textarea[@id='note-content']")
       .fill(
-        "Hàm hover dùng để di chuyển con trỏ chuột đến vị trí của phần tử, kích hoạt các hiệu ứng hover"
+        "Hàm hover dùng để di chuyển con trỏ chuột đến vị trí của phần tử, kích hoạt các hiệu ứng hover",
       );
     await page.click("//button[@id='add-note']");
 
@@ -45,7 +45,7 @@ test("Exercise 4", async ({ page }) => {
     await page
       .locator("//textarea[@id='note-content']")
       .fill(
-        "Hàm check dùng để đánh dấu checkbox hoặc radiobutton, đảm bảo phần tử ở trạng thái checked"
+        "Hàm check dùng để đánh dấu checkbox hoặc radiobutton, đảm bảo phần tử ở trạng thái checked",
       );
     await page.click("//button[@id='add-note']");
 
@@ -53,7 +53,7 @@ test("Exercise 4", async ({ page }) => {
     await page
       .locator("//textarea[@id='note-content']")
       .fill(
-        "Hàm uncheck dùng để bỏ đánh dấu checkbox, đảm bảo phần tử ở trạng thái unchecked"
+        "Hàm uncheck dùng để bỏ đánh dấu checkbox, đảm bảo phần tử ở trạng thái unchecked",
       );
     await page.click("//button[@id='add-note']");
 
@@ -61,7 +61,7 @@ test("Exercise 4", async ({ page }) => {
     await page
       .locator("//textarea[@id='note-content']")
       .fill(
-        "Hàm selectOption dùng để chọn một hoặc nhiều option trong thẻ select dropdown"
+        "Hàm selectOption dùng để chọn một hoặc nhiều option trong thẻ select dropdown",
       );
     await page.click("//button[@id='add-note']");
 
@@ -69,15 +69,15 @@ test("Exercise 4", async ({ page }) => {
     await page
       .locator("//textarea[@id='note-content']")
       .fill(
-        "Hàm press dùng để mô phỏng việc nhấn phím từ bàn phím như Enter, Tab, Escape hoặc các phím khác"
+        "Hàm press dùng để mô phỏng việc nhấn phím từ bàn phím như Enter, Tab, Escape hoặc các phím khác",
       );
     await page.click("//button[@id='add-note']");
 
-    await page.locator("//input[@id='note-title']").fill("dbclick");
+    await page.locator("//input[@id='note-title']").fill("dblclick");
     await page
       .locator("//textarea[@id='note-content']")
       .fill(
-        "Hàm dbclick dùng để thực hiện double click (nhấp đúp chuột) vào phần tử trên trang web"
+        "Hàm dblclick dùng để thực hiện double click (nhấp đúp chuột) vào phần tử trên trang web",
       );
     await page.click("//button[@id='add-note']");
 
@@ -85,7 +85,7 @@ test("Exercise 4", async ({ page }) => {
     await page
       .locator("//textarea[@id='note-content']")
       .fill(
-        "Hàm dragAndDrop dùng để kéo 1 phần tử từ vị trí nguồn và thả vào vị trí đích trên trang web"
+        "Hàm dragAndDrop dùng để kéo 1 phần tử từ vị trí nguồn và thả vào vị trí đích trên trang web",
       );
     await page.click("//button[@id='add-note']");
   });

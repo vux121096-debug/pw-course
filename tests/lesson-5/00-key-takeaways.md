@@ -134,18 +134,19 @@ Document
 
 ```html
 <div class="container">
-  // opening tag
+  <!-- opening tag -->
   <p id="paragraph">Hello, DOM!</p>
-  // text node
+  <!-- paragraph element -->
 </div>
-// closing tag
+<!-- closing tag -->
 ```
 
 - Thẻ tự đóng (self-closing tag) không có thẻ đóng
 
 ```html
-<img src="image.jpg" alt="Image" /> // thẻ tự đóng <br />
-// self-closing tag
+<img src="image.jpg" alt="Image" /> <!-- thẻ tự đóng -->
+<br />
+<!-- self-closing tag -->
 ```
 
 - Cú pháp chung của thẻ HTML:
@@ -162,19 +163,18 @@ dung bên trong thẻ (có thể là text hoặc các thẻ con)
   Thẻ Cấu Trúc Cơ Bản:
 
 ```html
-<!DOCTYPE html>
-<html>
-  <!-- Thẻ gốc -->
+<!DOCTYPE html> <!-- Khai báo tài liệu HTML5 -->
+<html> <!-- Thẻ gốc của trang HTML -->
   <head>
-    <!-- Phần đầu trang chứa metadata: title, link, script -->
-    <body>
-      <!-- Phần thân trang chứa nội dung hiển thị -->
-      <div></div>
-      <!-- Thẻ khối -->
-      <span></span>
-      <!-- Thẻ inline -->
-    </body>
+    <!-- Phần đầu trang, chứa metadata: title, link, meta, script -->
   </head>
+  <body>
+    <!-- Phần thân trang, chứa nội dung hiển thị -->
+    <div></div>
+    <!-- Thẻ khối (block-level element) -->
+    <span></span>
+    <!-- Thẻ inline (inline element) -->
+  </body>
 </html>
 ```
 
